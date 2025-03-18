@@ -13,8 +13,15 @@
     --color-box-shadow: rgba(0, 0, 0, 0.2);
     --gradient-start: #fdeff2;
     --gradient-end: #ffd7e2;
+    --color-red-purple: #740B39;
 }
     
+h1,
+h2,
+h3 {
+    font-size: 2.5em;
+    color: var(--color-red-purple);
+}
 
 p {
     color: var(--color-text);
