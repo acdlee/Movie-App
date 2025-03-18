@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-nav-text: #383838;
+    --color-text: #3b3b42;
+    --color-bg-white: #fff;
+    --color-bg-hover: #eee;
+    --color-pink: #F27EB1;
+    --color-box-shadow: rgba(0, 0, 0, 0.2);
+    --gradient-start: #fdeff2;
+    --gradient-end: #ffd7e2;
+}
+    
+
+p {
+    color: var(--color-text);
+}
+
+a {
+    color: var(--color-nav-text);
+}
