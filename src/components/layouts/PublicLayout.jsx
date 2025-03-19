@@ -1,10 +1,13 @@
 import MainNavigation from "../MainNavigation";
 
+import styles from './PublicLayout.module.css';
+
 function PublicLayout({ children }) {
     return (
         <div>
             <MainNavigation />
-            <main>
+            <hr className={styles.hr} />
+            <main className={styles.main}>
                 { children }
             </main>
         </div>

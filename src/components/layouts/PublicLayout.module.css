@@ -1,0 +1,23 @@
+.main {
+    background: linear-gradient(to right, var(--gradient-start) 80%, var(--gradient-end));
+    padding-top: 2.5em;
+    padding-bottom: 2em;
+}
+
+.hr {
+    border: none;
+    border-top: 3px double var(--color-nav-text);
+    color: var(--color-nav-text);
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+  
+.hr::after {
+    background: linear-gradient(to right, var(--gradient-start) 80%, var(--gradient-end));
+    content: "§";
+    position: relative;
+    font-size: 1.5em;
+    top: -.75em;
+}
+  

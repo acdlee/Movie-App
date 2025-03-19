@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 import styles from "./NowPlaying.module.css";
+import { FaStar } from "react-icons/fa";
 
 const API_KEY = import.meta.env.VITE_API_KEY;
 const POSTER_URL = "https://image.tmdb.org/t/p/w300";
@@ -43,7 +44,10 @@ function NowPlaying() {
                         <li key={movie.id}>
                             <img src={POSTER_URL + movie.poster_path} alt={movie.title + " poster"} />
                             <div>
-                                <span>{movie.vote_average}</span>
+                                <span>
+                                    <FaStar className={styles.star} />
+                                    {movie.vote_average}
+                                </span>
                                 <span>{movie.release_date}</span>
                                 <p>{movie.title}</p>
                             </div>
