@@ -28,12 +28,12 @@ function NowPlaying() {
                 console.log(error);
            }
         }
-        let targetData = DATA2.results.filter(movie => movie.original_language == 'en' && movie.media_type == 'movie')
-                                .sort((movie1, movie2) => movie2.popularity - movie1.popularity)
-                                .slice(0, 8);
+        // let targetData = DATA2.results.filter(movie => movie.original_language == 'en' && movie.media_type == 'movie')
+        //                         .sort((movie1, movie2) => movie2.popularity - movie1.popularity)
+        //                         .slice(0, 8);
 
-        setMovieData(targetData);
-        // initializeData();
+        // setMovieData(targetData);
+        initializeData();
     }, []);
 
     return (
