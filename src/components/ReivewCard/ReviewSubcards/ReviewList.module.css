@@ -1,0 +1,27 @@
+.container {
+    margin: 0 auto;
+    width: 48.5%;
+    height: fit-content;
+}
+
+.innerContainer {
+    width: 100%;
+    height: 250px;
+    padding: 1em;
+
+    overflow-y: auto;
+}
+
+.innerContainer legend {
+    padding-inline: 2px;
+    font-weight: bold;
+}
+
+.innerContainer p {
+    width: 100%;
+    padding: .25em auto 5em .25em;
+}
+
+.innerContainer p span {
+    font-weight: bold;
+}

@@ -1,0 +1,39 @@
+.container {
+    background-color: var(--gradient-start);
+    color: var(--color-text);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 2.5em;
+    padding: .5em 1em 1em;
+
+    box-shadow: 0 0px 3px var(--color-box-shadow);
+    border: 1px solid var(--gradient-start);
+}
+
+.fullWidth {
+    flex: 0 0 100%;
+    margin-bottom: 1em;
+}
+
+.h3 {
+    padding: 2em .5em 1em;
+    font-size: 1.25em;
+}
+
+.img {
+    height: 250px;
+    width: 200px;
+    float: left;
+    margin-left: .5em;
+    border-radius: 10px;
+    border: 2px ridge var(--dark-purple);
+}
+
+.p {
+    padding: .2em 1em 1em calc(100px + 1em);
+}
+
+.p span {
+    font-weight: bold;
+}

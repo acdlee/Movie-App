@@ -1,23 +1,36 @@
-function Review() {
+import ReviewCard from "../ReivewCard/ReviewCard";
+import { STORE } from "../../data";
+import { useState } from "react";
+import styles from './Review.module.css';
+
+/* 
+*   Container for movie review cards.
+*/
+function Content({}) {
+    const [moviesData, setMoviesData] = useState(STORE);
+
+    function addReview([id, review]) {
+        // Add the review
+        setMoviesData(prevData => (
+            // Store is an array of movie objects (with a reviews array property)
+            prevData.map((m) => (
+                m.id == id ? {...m, reviews: m.reviews.concat(review)} : m
+            ))
+        ));
+    }
+
     return (
-        <section>
-            <h2>Movie Review</h2>
-            <ul>
-                <li>
-                    <h3>Movie 1</h3>
-                    <p>Here's the review for the movie.</p>
-                </li>
-                <li>
-                    <h3>Movie 2</h3>
-                    <p>Here's the review for the movie.</p>
-                </li>
-                <li>
-                    <h3>Movie 3</h3>
-                    <p>Here's the review for the movie.</p>
-                </li>
-            </ul>
+        <section className={styles.section}>
+            <h2>Movie Reviews</h2>
+            {moviesData.map((movie) => (
+                <ReviewCard 
+                    key={movie.id} 
+                    movieData={movie} 
+                    onAddReview={addReview} />
+            ))
+            }
         </section>
     );
 }
 
-export default Review;
+export default Content;

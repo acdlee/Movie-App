@@ -1,0 +1,13 @@
+.section {
+    text-align: center;
+    width: 80vw;
+    margin: 0 auto;
+    background-color: var(--color-bg-white);
+    padding: 2em 1em .5em;
+    border-radius: 10px;
+    box-shadow: 0 0px 3px var(--color-box-shadow);
+}
+
+.section h2 {
+    margin-bottom: 1em;
+}
